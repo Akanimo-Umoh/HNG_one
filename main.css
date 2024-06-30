@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ccc;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+@media screen and (min-width: 1024px) {
+    [data-testid="slackProfilePicture"] {
+        margin-top: 20px;
+    }
+
+    a {
+        text-decoration: none;
+        margin: 10px;
+    }
+}
