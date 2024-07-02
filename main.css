@@ -5,6 +5,7 @@
 }
 
 body {
+    font-family: poppins;
     background: #ccc;
     text-align: center;
     display: flex;
@@ -13,13 +14,37 @@ body {
     padding: 20px 0;
 }
 
-@media screen and (min-width: 1024px) {
-    [data-testid="slackProfilePicture"] {
-        margin-top: 20px;
-    }
+.visit {
+    display: flex;
+    margin-bottom: 10px;
+}
 
-    a {
-        text-decoration: none;
-        margin: 10px;
+a {
+    text-decoration: none;
+    margin: 10px;
+}
+
+.mainCtn {
+    margin-top: 20px;
+}
+
+[data-testid="slackProfilePicture"] {
+    margin-top: 10px;
+}
+
+@media screen and (min-width: 798px) {
+    [data-testid="slackProfilePicture"] {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .mainCtn {
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* border: 1px solid black; */
+        gap: 20px;
     }
 }
